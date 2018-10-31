@@ -40,6 +40,7 @@ const gameOver = () => {
   ) {
     document.querySelector('.play-area').classList.add('game-over')
     document.querySelector('.players-header').classList.add('game-over')
+    document.querySelector('.game-results').classList.add('winner')
   }
 }
 
@@ -70,7 +71,7 @@ const resetGame = () => {
   // playerOneChoice = ''
   // playerTwoChoice = ''
   // gameResults.textContent = 'Who will be the winner?'
-  // console.log('Game is reset!')
+  console.log('Game is reset!')
 }
 
 const playerOneRockChoice = () => {

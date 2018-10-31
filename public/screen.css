@@ -4,9 +4,11 @@ html {
 
 body {
   margin: 0;
-  min-height: 100%;
   font: 16px / 1 sans-serif;
   background-color: #546d64;
+  background-image: url('https://mocah.org/uploads/posts/4558471-fists-hands-fighting-fire-digital-art.jpg');
+  background-size: auto 1000px;
+  background-position: center;
 }
 
 h1 {
@@ -14,6 +16,9 @@ h1 {
   margin: 3rem 0 1rem 0;
   text-align: center;
   font-family: 'East Sea Dokdo', cursive;
+  background-color: rgba(249, 237, 149, 0.6);
+  border-top: 10px solid #9c2727;
+  border-bottom: 10px solid #9c2727;
 }
 
 .players-header {
@@ -22,8 +27,14 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;
-  font-family: 'Patrick Hand SC', cursive;
+  font-size: 4.5rem;
+  font-family: 'East Sea Dokdo', cursive;
+  color: black;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  margin: 0 auto;
+  text-shadow: 4px 4px 5px rgba(249, 237, 149);
+  text-shadow: 4px 4px 5px rgba(249, 237, 149);
 }
 
 .play-area {
@@ -32,25 +43,35 @@ h2 {
 }
 
 .player-choice {
-  font-size: 2rem;
-  font-family: 'Patrick Hand SC', cursive;
+  font-size: 2.5rem;
+  font-family: 'East Sea Dokdo', cursive;
   width: 12rem;
   height: 4rem;
   margin: 1rem;
   display: block;
   border-radius: 8px;
+  border-width: 4px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .player-choice:hover {
-  font-size: 2.4rem;
-  background-color: #fe3f3f;
+  font-size: 2.9rem;
   border-color: #9c2727;
+  background-color: rgba(225, 43, 43, 0.8);
+
   /* color: #f3efd3; */
+  cursor: pointer;
 }
 
 .game-results {
-  font-size: 3rem;
-  font-family: 'Patrick Hand SC', cursive;
+  font-size: 4rem;
+  font-family: 'East Sea Dokdo', cursive;
+  color: rgb(225, 43, 43);
+  color: black;
+  text-shadow: 3px 3px 5px rgba(249, 237, 149);
+  margin: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.7rem;
 }
 
 p {
@@ -60,24 +81,31 @@ p {
 .reset-container {
   display: flex;
   justify-content: center;
+  /* background-color: #546d64; */
 }
 
 .reset {
-  font-family: 'Patrick Hand SC', cursive;
+  font-family: 'East Sea Dokdo', cursive;
   width: 20rem;
   height: 4rem;
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   margin-bottom: 4rem;
   border-radius: 8px;
+  border-width: 4px;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .reset:hover {
-  background-color: #fe3f3f;
+  background-color: rgba(225, 43, 43, 0.8);
   border-color: #9c2727;
-  /* color: #f3efd3; */
-  font-size: 2rem;
+  font-size: 2.9rem;
+  cursor: pointer;
 }
 
 .game-over {
   display: none;
+}
+
+.winner {
+  font-size: 6rem;
 }
