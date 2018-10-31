@@ -6,4 +6,72 @@ body {
   margin: 0;
   min-height: 100%;
   font: 16px / 1 sans-serif;
+  background-color: #546d64;
+}
+
+h1 {
+  font-size: 9rem;
+  margin: 3rem 0 1rem 0;
+  text-align: center;
+  font-family: 'East Sea Dokdo', cursive;
+}
+
+.players-header {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: 'Patrick Hand SC', cursive;
+}
+
+.play-area {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.player-choice {
+  font-size: 2rem;
+  font-family: 'Patrick Hand SC', cursive;
+  width: 12rem;
+  height: 4rem;
+  margin: 1rem;
+  display: block;
+}
+
+.player-choice:hover {
+  font-size: 2.4rem;
+  background-color: #fe3f3f;
+  border-color: #9c2727;
+  /* color: #f3efd3; */
+}
+
+.game-results {
+  font-size: 3rem;
+  font-family: 'Patrick Hand SC', cursive;
+}
+
+p {
+  text-align: center;
+}
+
+.reset-container {
+  display: flex;
+  justify-content: center;
+}
+
+.reset {
+  font-family: 'Patrick Hand SC', cursive;
+  width: 20rem;
+  height: 4rem;
+  font-size: 1.7rem;
+  margin-bottom: 4rem;
+}
+
+.reset:hover {
+  background-color: #fe3f3f;
+  border-color: #9c2727;
+  /* color: #f3efd3; */
+  font-size: 2rem;
 }
