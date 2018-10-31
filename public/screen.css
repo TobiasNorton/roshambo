@@ -38,6 +38,7 @@ h2 {
   height: 4rem;
   margin: 1rem;
   display: block;
+  border-radius: 8px;
 }
 
 .player-choice:hover {
@@ -67,6 +68,7 @@ p {
   height: 4rem;
   font-size: 1.7rem;
   margin-bottom: 4rem;
+  border-radius: 8px;
 }
 
 .reset:hover {
@@ -74,4 +76,8 @@ p {
   border-color: #9c2727;
   /* color: #f3efd3; */
   font-size: 2rem;
+}
+
+.game-over {
+  display: none;
 }

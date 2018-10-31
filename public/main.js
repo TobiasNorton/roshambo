@@ -25,13 +25,52 @@ const whoIsTheWinner = () => {
   ) {
     gameResults.textContent = 'Tie Game!!'
   }
+  gameOver()
 }
 
+const gameOver = () => {
+  // Find the player names and player choice buttons
+  let playArea = document.querySelector('play-area')
+  // Create logic that says IF the game results are in, then add the
+  //class that sets the afortmentioned elements to display: none
+  if (
+    gameResults.textContent === 'Player One Wins!!' ||
+    gameResults.textContent === 'Player Two Wins!!' ||
+    gameResults.textContent === 'Tie Game!!'
+  ) {
+    document.querySelector('.play-area').classList.add('game-over')
+    document.querySelector('.players-header').classList.add('game-over')
+  }
+}
+
+// const gameOver = () => {
+//   // Find the player names and player choice buttons
+//   let playerNamesandButtons = document.querySelector('game-over')
+//   // Create logic that says IF the game results are in, then add the
+//   //class that sets the afortmentioned elements to display: none
+//   if (
+//     gameResults.textContent === 'Player One Wins!!' ||
+//     gameResults.textContent === 'Player Two Wins!!' ||
+//     gameResults.textContent === 'Tie Game!!'
+//   ) {
+//     playerNamesandButtons.add('game-over')
+//     // If the results aren't in, remove the .game-over class
+//   } else {
+//     playerNamesandButtons.remove('game-over')
+//   }
+// }
+// const gameOver = () => {
+//   let element = document.querySelector('game-over')
+//   console.log(element)
+//   // element.classList.add('.game-over')
+// }
+
 const resetGame = () => {
-  playerOneChoice = ''
-  playerTwoChoice = ''
-  gameResults.textContent = 'Who will be the winner?'
-  console.log('Game is reset!')
+  window.location.reload('true')
+  // playerOneChoice = ''
+  // playerTwoChoice = ''
+  // gameResults.textContent = 'Who will be the winner?'
+  // console.log('Game is reset!')
 }
 
 const playerOneRockChoice = () => {
@@ -96,6 +135,7 @@ const main = () => {
 
 let resetButton = document.querySelector('.reset')
 resetButton.addEventListener('click', resetGame)
+//document.querySelector('.play-area').classList.remove('game-over')
 // //const main = () => {
 //   document.querySelector('h1').textContent += '?'
 // }
