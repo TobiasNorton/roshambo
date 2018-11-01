@@ -1,5 +1,4 @@
 html {
-  height: 100%;
 }
 
 body {
@@ -7,8 +6,10 @@ body {
   font: 16px / 1 sans-serif;
   background-color: #546d64;
   background-image: url('https://mocah.org/uploads/posts/4558471-fists-hands-fighting-fire-digital-art.jpg');
-  background-size: auto 1000px;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 h1 {
