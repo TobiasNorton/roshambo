@@ -3,7 +3,6 @@ let playerOneChoice = ''
 let playerTwoChoice = ''
 
 let gameResults = document.querySelector('.game-results')
-//console.log(gameResults)
 
 const whoIsTheWinner = () => {
   if (
@@ -12,27 +11,26 @@ const whoIsTheWinner = () => {
     (playerOneChoice === 'scissors' && playerTwoChoice === 'paper')
   ) {
     gameResults.textContent = 'Player One Wins!!'
+    showResetButton()
   } else if (
     (playerOneChoice === 'scissors' && playerTwoChoice === 'rock') ||
     (playerOneChoice === 'rock' && playerTwoChoice === 'paper') ||
     (playerOneChoice === 'paper' && playerTwoChoice === 'scissors')
   ) {
     gameResults.textContent = 'Player Two Wins!!'
+    showResetButton()
   } else if (
     (playerOneChoice === 'rock' && playerTwoChoice === 'rock') ||
     (playerOneChoice === 'paper' && playerTwoChoice === 'paper') ||
     (playerOneChoice === 'scissors' && playerTwoChoice === 'scissors')
   ) {
     gameResults.textContent = 'Tie Game!!'
+    showResetButton()
   }
   gameOver()
 }
 
 const gameOver = () => {
-  // Find the player names and player choice buttons
-  let playArea = document.querySelector('play-area')
-  // Create logic that says IF the game results are in, then add the
-  //class that sets the afortmentioned elements to display: none
   if (
     gameResults.textContent === 'Player One Wins!!' ||
     gameResults.textContent === 'Player Two Wins!!' ||
@@ -44,78 +42,55 @@ const gameOver = () => {
   }
 }
 
-// const gameOver = () => {
-//   // Find the player names and player choice buttons
-//   let playerNamesandButtons = document.querySelector('game-over')
-//   // Create logic that says IF the game results are in, then add the
-//   //class that sets the afortmentioned elements to display: none
-//   if (
-//     gameResults.textContent === 'Player One Wins!!' ||
-//     gameResults.textContent === 'Player Two Wins!!' ||
-//     gameResults.textContent === 'Tie Game!!'
-//   ) {
-//     playerNamesandButtons.add('game-over')
-//     // If the results aren't in, remove the .game-over class
-//   } else {
-//     playerNamesandButtons.remove('game-over')
-//   }
-// }
-// const gameOver = () => {
-//   let element = document.querySelector('game-over')
-//   console.log(element)
-//   // element.classList.add('.game-over')
-// }
+const showResetButton = () => {
+  let resetButton = document.querySelector('.hidden')
+  resetButton.classList.remove('hidden')
+}
 
 const resetGame = () => {
   window.location.reload('true')
-  // playerOneChoice = ''
-  // playerTwoChoice = ''
-  // gameResults.textContent = 'Who will be the winner?'
-  console.log('Game is reset!')
+  console.log('Game is reset')
 }
 
 const playerOneRockChoice = () => {
   playerOneChoice = 'rock'
-  console.log(`Player one chose ${playerOneChoice}!`)
-  // Call the function that determines the winner.
+  console.log(`Player one chose ${playerOneChoice}`)
   whoIsTheWinner()
 }
 
 const playerOnePaperChoice = () => {
   playerOneChoice = 'paper'
-  console.log(`Player one chose ${playerOneChoice}!`)
+  console.log(`Player one chose ${playerOneChoice}`)
   whoIsTheWinner()
 }
 
 const playerOneScissorsChoice = () => {
   playerOneChoice = 'scissors'
-  console.log(`Player one chose ${playerOneChoice}!`)
+  console.log(`Player one chose ${playerOneChoice}`)
   whoIsTheWinner()
 }
 
 const playerTwoRockChoice = () => {
   playerTwoChoice = 'rock'
-  console.log(`Player two chose ${playerTwoChoice}!`)
+  console.log(`Player two chose ${playerTwoChoice}`)
   whoIsTheWinner()
 }
 
 const playerTwoPaperChoice = () => {
   playerTwoChoice = 'paper'
-  console.log(`Player two chose ${playerTwoChoice}!`)
+  console.log(`Player two chose ${playerTwoChoice}`)
   whoIsTheWinner()
 }
 
 const playerTwoScissorsChoice = () => {
   playerTwoChoice = 'scissors'
-  console.log(`Player two chose ${playerTwoChoice}!`)
+  console.log(`Player two chose ${playerTwoChoice}`)
   whoIsTheWinner()
 }
 
 const main = () => {
-  // find the player one rock button
   let playerOneRockButton = document.querySelector('.player-one .rock')
-  //console.log(playerOneRockButton)
-  // Add an event listener and the function to call when the action is performed
+
   playerOneRockButton.addEventListener('click', playerOneRockChoice)
 
   let playerOnePaperButton = document.querySelector('.player-one .paper')
@@ -136,9 +111,5 @@ const main = () => {
 
 let resetButton = document.querySelector('.reset')
 resetButton.addEventListener('click', resetGame)
-//document.querySelector('.play-area').classList.remove('game-over')
-// //const main = () => {
-//   document.querySelector('h1').textContent += '?'
-// }
 
 document.addEventListener('DOMContentLoaded', main)
