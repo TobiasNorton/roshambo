@@ -1,7 +1,7 @@
 # Roshambo
 
 <p align="center">
-<img src="./Roshambo.gif"/>
+<img src="src/Roshambo.gif"/>
 </p>
 
 See it live here: <a href="http://roshambo-tobiasnorton.surge.sh/">http://roshambo-tobiasnorton.surge.sh/</a>
