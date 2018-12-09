@@ -4,7 +4,7 @@
 <img src="./Roshambo.gif"/>
 </p>
 
-See it live here: <a href="http://roshambo-tobiasnorton.surge.sh/"></a>
+See it live here: <a href="http://roshambo-tobiasnorton.surge.sh/">http://roshambo-tobiasnorton.surge.sh/</a>
 
 ## Description
 
